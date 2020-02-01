@@ -22,12 +22,10 @@ num_array
 end
 
 def total_even_pairs(src)
-  even_array = []
+  total = 0
   row_index = 0
   while row_index < src.length do
-    element_index = 0
-    while element_index < src[row_index].count do 
-      src[row_index][element_index].select { |num| num.even? } 
+    if src[row_index][0] % 2 == 0 && 
         even_array << num
       element_index += 1
     end
